@@ -13,18 +13,18 @@ function simpleFibonacci() {
     let a = 0;
     let b = 1;
     let c = 0;
-    // let sum;
+    let sum = 0;
     const Fib_Arr = [];
     for(let i = 0; c < 4000000; i++){
         c = a;
         a = b;
         b = a + c;
-        if(c < 4000000){
-            Fib_Arr.push(c);
+        if(c < 4000000 && c % 2 === 0){
+            sum += c;
+            console.log(`adding ${c}`);
         }
     }
-    console.log(Fib_Arr);
-    return Fib_Arr;
+    return sum;
 }
 
 function fibonacciArray(array_length) {  
@@ -39,8 +39,8 @@ function fibonacciArray(array_length) {
     return fib_array;
 }
 
-let intialVal = 0;
-const sumEven = simpleFibonacci().reduce((a, b) => (b % 2 === 0) ? a + b : a + 0, intialVal);
-
+// let intialVal = 0;
+// const sumEven = simpleFibonacci().reduce((a, b) => (b % 2 === 0) ? a + b : a + 0, intialVal);
+const sumEven = simpleFibonacci();
 // console.log('simple fibonacci function: ', simpleFibonacci());
 console.log('Sum of even Fibonacci numbers under 4m: ', sumEven);
