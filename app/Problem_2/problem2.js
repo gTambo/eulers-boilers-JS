@@ -18,6 +18,6 @@ function simpleFibonacci() {
 
 const start = process.hrtime.bigint()
 const sumEven = await simpleFibonacci();
+console.log('Sum of even Fibonacci numbers under 4m: ', sumEven);
 const end = process.hrtime.bigint();
 console.log(`Execution time: ${end - start} ns`);
-console.log('Sum of even Fibonacci numbers under 4m: ', sumEven);
