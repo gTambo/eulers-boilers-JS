@@ -1,0 +1,14 @@
+{
+    "name": "eulers-boilers-2023",
+    "description": "attempted solutions for problems at https://projecteuler.net/",
+    "authors": "Greg Tambornino",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "fs": "^0.0.1-security"
+    },
+    "scripts": {
+        "start": "http-server -a localhost -p 3000 -c-1 ./app"
+    },
+    "type": "module"
+}
