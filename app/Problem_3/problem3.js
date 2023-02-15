@@ -23,12 +23,12 @@ function findHighestPrimeFactor(int){
                 return end;
             }
         } 
-        if (int % start === 0) {
-            if(checkPrime(start)){
-                return start;
-            }
-        }
-        start++;
+        // if (int % start === 0) {
+        //     if(checkPrime(start)){
+        //         return start;
+        //     }
+        // }
+        // start++;
         end--;
     }
     return "none found";
